@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
+  navSelectedValue: string = 'recipes';
+
+  onNavSelected(navSelected: string) {
+    this.navSelectedValue = navSelected;
+  }
 }
